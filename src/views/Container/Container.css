@@ -9,4 +9,5 @@
   color: #ffffff;
   overflow: hidden;
   overflow-y: auto;
+  place-content: start;
 }
