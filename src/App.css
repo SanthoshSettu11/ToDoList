@@ -4,8 +4,13 @@
   height: 100vh;
 }
 
-.App > h1 {
+.App > h2 {
   background-color: #333333;
   color: #ffffff;
   height: 50px;
+  border-bottom: 0.2px solid #545454;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  font-family: sans-serif;
 }

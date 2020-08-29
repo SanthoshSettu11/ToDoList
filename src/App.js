@@ -11,7 +11,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
-        <h1>To Do Activities</h1>
+        <h2>To Do Activities</h2>
         <Container />
       </div>
     </ThemeProvider>
