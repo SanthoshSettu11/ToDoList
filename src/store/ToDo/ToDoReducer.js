@@ -7,7 +7,10 @@ const LoginReducer = (state = initialState, action) => {
     case ADDTODO:
       return [...state, action.payLoad];
     case REMOVETODO:
-      return [...state.slice(0, action.index), ...state.slice(action.index)];
+      return [
+        ...state.slice(0, action.index),
+        ...state.slice(action.index + 1)
+      ];
     case UPDATETODO:
       return [
         ...state.slice(0, action.index),
