@@ -15,7 +15,7 @@ const LoginReducer = (state = initialState, action) => {
       return [
         ...state.slice(0, action.index),
         action.payLoad,
-        ...state.slice(action.index)
+        ...state.slice(action.index + 1)
       ];
     default:
       return state;
