@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  background: #333333;
+  height: calc(100% - 50px);
+  width: 100%;
+  color: #ffffff;
+  overflow: hidden;
+  overflow-y: auto;
+}

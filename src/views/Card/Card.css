@@ -1,0 +1,34 @@
+.card {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  margin: 10px 0px 10px 10px;
+  color: #333333;
+  background-color: #ffffff;
+  align-items: center;
+  place-content: center;
+  display: flex;
+  transition-timing-function: ease-in;
+}
+
+.card__edit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.card__activity {
+  padding: 10px;
+  word-wrap: break-word;
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+  flex: 0.8;
+}
+
+.card__iconcontainer {
+  flex: 0.2;
+}

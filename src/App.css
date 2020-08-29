@@ -1,0 +1,11 @@
+.App {
+  background-color: darkgray;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App > h1 {
+  background-color: #333333;
+  color: #ffffff;
+  height: 50px;
+}
