@@ -55,6 +55,7 @@ function AddEditToDo(props) {
         </DialogTitle>
         <DialogContent>
           <Input
+            autoFocus
             type="input"
             placeholder="Activity"
             value={activity}
