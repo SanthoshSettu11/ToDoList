@@ -6,7 +6,7 @@ import { IconButton } from "@material-ui/core";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteRoundedIcon from "@material-ui/icons/DeleteRounded";
 import { useDispatch } from "react-redux";
-import { removeToDo, addToDo } from "../../store/ToDo/ToDoActions";
+import { removeToDo, addToDo, updateToDo } from "../../store/ToDo/ToDoActions";
 
 function Card(props) {
   const [open, setOpen] = useState(false);
@@ -17,15 +17,15 @@ function Card(props) {
     if (data && isAdd) {
       const toDo = {
         activity: data,
-        index: Math.random()
+        id: Math.random()
       };
       dispatch(addToDo(toDo));
     } else if (data) {
       const toDo = {
         activity: data,
-        index: props.index
+        id: props.id
       };
-      dispatch(addToDo(toDo));
+      dispatch(updateToDo(toDo, props.index));
     }
     setOpen(false);
   };

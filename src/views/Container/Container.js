@@ -14,7 +14,12 @@ function Container() {
       {ToDoList && (
         <React.Fragment>
           {ToDoList.map((toDo, index) => (
-            <Card key={toDo.id} activity={toDo.activity} index={index} />
+            <Card
+              key={toDo.id}
+              activity={toDo.activity}
+              index={index}
+              id={toDo.id}
+            />
           ))}
         </React.Fragment>
       )}
