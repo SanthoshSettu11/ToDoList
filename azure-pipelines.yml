@@ -5,10 +5,10 @@
 
 trigger:
 - master
+  -script: echo $(env)
 
 pool:
   vmImage: ubuntu-latest
-    echo $env
 
 steps:
 - task: NodeTool@0
